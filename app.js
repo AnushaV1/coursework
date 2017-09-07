@@ -15,7 +15,7 @@ angular.module('LunchCheck', [])
   };
     
 	function calculateItems($scope.menu) {
-	var msg = "null";
+	var msg = "abcd";
 	
 	return msg;
 	}
