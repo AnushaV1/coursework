@@ -9,17 +9,17 @@ angular.module('LunchCheck', [])
      //   $scope.count = 0;
 	 //  $scope.stateOfBeing = "fed";
 	 
-    $scope.countMessage = function () {
-    //   var mesg = calculateItems($scope.menu);
-	  // $scope.displayMessage = mesg;
-	  $scope.displayMessage = $scope.menu;
+    $scope.countMessage() = function () {
+      var mesg = calculateItems($scope.menu);
+	   $scope.displayMessage = mesg;
+	 // $scope.displayMessage = $scope.menu;
   };
     
-	//function calculateItems($scope.menu) {
-	//var msg = "abcd";
+	function calculateItems(menu) {
+	var msg = "abcd";
 	
-	//return msg;
-	//}
+	return msg;
+	}
    
     
    
