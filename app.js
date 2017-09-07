@@ -6,13 +6,13 @@ angular.module('LunchCheck', [])
  
  LunchCheckController.$inject = ['$scope'];
   function LunchCheckController($scope) {
- 
-  console.log($scope.menu);
+     $scope.counter = function () {
+ // console.log($scope.menu);
    // var totalNameValue = calculatNumericForString($scope.name);
     //$scope.totalValue = totalNameValue;
-//	$scope.displayMessage = $scope.menu;
+	$scope.displayMessage = $scope.menu;
 	}
-  
+  }
   })();
  
  
