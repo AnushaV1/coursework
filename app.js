@@ -9,7 +9,7 @@ angular.module('LunchCheck', [])
      //   $scope.count = 0;
 	 //  $scope.stateOfBeing = "fed";
 	 
-    $scope.countMessage() = function () {
+    $scope.countMessage = function () {
     //   var mesg = calculateItems($scope.menu);
 	  // $scope.displayMessage = mesg;
 	  $scope.displayMessage = $scope.menu;
