@@ -15,11 +15,11 @@ angular.module('LunchCheck', [])
 	  $scope.displayMessage = $scope.menu;
   };
     
-	function calculateItems($scope.menu) {
-	var msg = "abcd";
+	//function calculateItems($scope.menu) {
+	//var msg = "abcd";
 	
-	return msg;
-	}
+	//return msg;
+	//}
    
     
    
