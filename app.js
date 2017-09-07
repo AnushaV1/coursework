@@ -4,6 +4,7 @@
 angular.module('LunchCheck', [])
  .controller('LunchCheckController', function ($scope) {
  //$scope.menu = "";//get the list of items from the textbox
+ console.log($scope.menu);
  if($scope.menu == "") {
    $scope.displayMessage = "Please enter data first"; 
     }
