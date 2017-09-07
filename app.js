@@ -2,13 +2,14 @@
  'use strict';
 
 angular.module('LunchCheck', [])
- .controller('LunchCheckController', function ($scope) {
+ .controller('LunchCheckController',LunchCheckController);
+ 
+ LunchCheckController.$inject = ['$scope','$filter'];
+ 
  //$scope.menu = "";//get the list of items from the textbox
 
- if($scope.menu == "") {
-   $scope.displayMessage = "Please enter data first"; 
-    }
- $scope.counter = function () {
+ function LunchCheckController($scope, $filter) {
+  $scope.counter = function () {
   console.log($scope.menu);
    // var totalNameValue = calculatNumericForString($scope.name);
     //$scope.totalValue = totalNameValue;
