@@ -6,8 +6,7 @@ angular.module('LunchCheck', [])
  
  LunchCheckController.$inject = ['$scope'];
   function LunchCheckController($scope) {
-   
-     $scope.count = 0;
+     //   $scope.count = 0;
 	 //  $scope.stateOfBeing = "fed";
 	 
     $scope.countMessage() = function () {
