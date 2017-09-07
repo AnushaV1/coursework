@@ -4,19 +4,15 @@
 angular.module('LunchCheck', [])
  .controller('LunchCheckController',LunchCheckController);
  
- LunchCheckController.$inject = ['$scope','$filter'];
- 
- $scope.menu = "";//get the list of items from the textbox
-
- function LunchCheckController($scope, $filter) {
+ LunchCheckController.$inject = ['$scope'];
+  function LunchCheckController($scope) {
  
   console.log($scope.menu);
    // var totalNameValue = calculatNumericForString($scope.name);
     //$scope.totalValue = totalNameValue;
 //	$scope.displayMessage = $scope.menu;
-	};
+	}
   
- 
   })();
  
  
