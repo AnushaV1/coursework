@@ -16,8 +16,8 @@ angular.module('LunchCheck', [])
 //	$scope.displayMessage = $scope.menu;
 	};
   
- });
- })();
+ };
+  })();
  
  
  // (function () {
