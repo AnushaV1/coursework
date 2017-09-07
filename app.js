@@ -8,6 +8,7 @@ LunchCheckController.$inject = ['$scope'];
 function LunchCheckController ($scope) {
   $scope.menu = "";//get the list of items from the textbox
   $scope.totalValue = 0;
+  console.log($scope.menu);
    if($scope.menu ==" ") {
    $scope.displayStatus = "Please enter data first"; 
    }
@@ -22,10 +23,12 @@ function LunchCheckController ($scope) {
    $scope.displayStatus = "Too much!"; 
    }
    
-  };
-  
- function splitString(stringToSplit, separator) {
+   function splitString(stringToSplit, separator) {
   var arrayOfStrings = stringToSplit.split(separator);
 }
 return arrayOfStrings.length;
+  };
+  
+ 
+
 })();
