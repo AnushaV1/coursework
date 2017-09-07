@@ -10,23 +10,25 @@ function LunchCheckController ($scope) {
   $scope.totalValue = 0;
   console.log($scope.menu);
    if($scope.menu ==" ") {
-   $scope.displayStatus = "Please enter data first"; 
+   $scope.displayMessage = "Please enter data first"; 
    }
    
   $scope.counter = function () {
-    var cnt = splitString($scope.menu,comma);
-    $scope.totalValue = cnt;
-		if(cnt <=3) {
-   $scope.displayStatus = "Enjoy!!"; 
-   }
-   else {
-   $scope.displayStatus = "Too much!"; 
-   }
+    var msg = splitString($scope.menu,comma);
    
+   $scope.displayStatus = msg; 
+     
    function splitString(stringToSplit, separator) {
   var arrayOfStrings = stringToSplit.split(separator);
+  if(arrayOfStrings.length <=3) {
+  var message = "Enjoy!!";
+  }
+  else {
+  var message = "Too much!";
+  }
+  
 }
-return arrayOfStrings.length;
+return message;
   };
   
  
