@@ -4,12 +4,12 @@
 angular.module('LunchCheck', [])
  .controller('LunchCheckController', function ($scope) {
  //$scope.menu = "";//get the list of items from the textbox
- console.log($scope.menu);
+
  if($scope.menu == "") {
    $scope.displayMessage = "Please enter data first"; 
     }
  $scope.counter = function () {
- 
+  console.log($scope.menu);
    // var totalNameValue = calculatNumericForString($scope.name);
     //$scope.totalValue = totalNameValue;
 //	$scope.displayMessage = $scope.menu;
